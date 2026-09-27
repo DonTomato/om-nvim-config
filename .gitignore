@@ -1,0 +1,19 @@
+# Neovim local/session files
+Session.vim
+session.vim
+
+# Swap / backup files
+*.swp
+*.swo
+*~
+*.bak
+
+# Logs
+*.log
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+
+# Local plugin/package state if you don't want to commit it
+.lazy/
