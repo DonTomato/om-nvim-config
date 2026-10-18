@@ -12,3 +12,10 @@ vim.api.nvim_create_autocmd("InsertLeave", {
     vim.fn.system({ "hyprctl", "switchxkblayout", "all", "0" })
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
